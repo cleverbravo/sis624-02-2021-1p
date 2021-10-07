@@ -13,6 +13,6 @@ services:
     ports: 
       - 8080:80
     environment: 
-      - MYSQL_HOST=mysqldb
+      - MYSQL_HOST=db1p
 
     
