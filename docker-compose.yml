@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  db1p:
+    image: mysql:5.7
+    ports: 
+      - 3306:3306
+    environment: 
+      - MYSQL_ROOT_PASSWORD=123456
+  
+  php1p:
+    image: clever-sis624-1er
+    ports: 
+      - 8080:80
+    environment: 
+      - MYSQL_HOST=mysqldb
+
+    
