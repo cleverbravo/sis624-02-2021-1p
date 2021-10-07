@@ -1,5 +1,5 @@
 <?php
-include 'connection.php'
+include 'connection.php';
 
 $command="update estudiante set nombre='juan dos',ci='1234',telf='4321' where nombre='juan'";
 $result=$connection->query($command);
