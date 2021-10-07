@@ -6,7 +6,7 @@ COPY *.php /var/www/html/
 ENV MYSQL_HOST=localhost
 ENV MYSQL_USERNAME=root
 ENV MYSQL_PASSWORD=123456
-ENV MYSQL_DB=sistemas
+ENV MYSQL_DB=estudiante
 EXPOSE 80
 
 CMD ["/bin/bash","-c","set -e;apachectl -D FOREGROUND \"$@\""]
